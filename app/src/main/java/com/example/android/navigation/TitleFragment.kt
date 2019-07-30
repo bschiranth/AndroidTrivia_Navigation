@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.android.navigation.databinding.FragmentTitleBinding
 
 
@@ -19,7 +21,14 @@ class TitleFragment : Fragment() {
 
         val fragmentBinding: FragmentTitleBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_title, container, false);
 
+        fragmentBinding.playButton.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
+        }
 
+        //can also do navigation this way
+        /*fragmentBinding.playButton.setOnClickListener (
+            Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
+        )*/
         return fragmentBinding.root
     }
 
