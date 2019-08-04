@@ -28,7 +28,7 @@ class TitleFragment : Fragment() {
 
         fragmentBinding.playButton.setOnClickListener { view ->
             //view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
-            navigationController.navigate(R.id.action_titleFragment_to_gameFragment)
+            navigationController.navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
         }
 
         //can also do navigation this way
