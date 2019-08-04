@@ -87,13 +87,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="main2Activity">
+                  <entry key="rulesFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="219" />
-                            <option name="y" value="-508" />
+                            <option name="x" value="207" />
+                            <option name="y" value="-500" />
                           </Point>
                         </option>
                       </LayoutPositions>
